@@ -24,19 +24,19 @@ pipeline{
         // Add the Release stage here
         stage('Release') {
 
- steps {
+                      steps {
 
- sh '''
+                            sh '''
 
- oc project acqhay-greetings
+                               oc project acqhay-greetings
 
- oc start-build greeting-console --follow --wait
+                                oc start-build greeting-console --follow --wait
 
- '''
+                              '''
 
- }
+                             }
 
-}
+                        }
 
     }
 }
